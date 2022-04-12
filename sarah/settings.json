@@ -1,0 +1,18 @@
+{
+    "prefix": "$",
+
+    "status": "",
+    "sttype": "",
+
+    "language": "en",
+
+    "maxwarns": 3,
+
+    "font": "Standard",
+    "horizontalLayout": "default",
+    "verticalLayout": "default",
+    "width": 1000,
+    "whitespaceBreak": false,
+
+    "token": ""
+}
