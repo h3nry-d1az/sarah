@@ -4,6 +4,8 @@
     "status": "",
     "sttype": "",
 
+    "language": "en",
+
     "maxwarns": 3,
 
     "font": "Standard",
