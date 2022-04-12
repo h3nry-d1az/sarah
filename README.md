@@ -1,7 +1,7 @@
 <h1 align="center"> sarah </h1>
 <p align="center"> <a href="https://dottedco.github.io/">Our website</a> — <a href="https://dottedco.github.io/sarah/">sarah project's website</a> </p>
 
-Welcome to the main site of the **sarah** project, a general-purpose, configurable and highly reliable discord bot made entirely in pure *JavaScript* with only a few dependencies. Sarah is totally open-source software, so you are free to contribute and make the changes you want to this project's source code. In the following steps, we'll guide you through the process of installing **sarah** in your discord server and deploying it.
+Welcome to the main site of the **sarah** project, a general purpose, configurable and highly reliable discord bot made entirely in pure *JavaScript* with only a few dependencies. Sarah is totally open-source software, so you are free to contribute and make the changes you want to this project's source code. In the following steps, we'll guide you through the process of installing **sarah** in your discord server and deploying it.
 
 1. [Forking and installation](#-forking-and-installation-)
 2. [Configuration](#-configuration-)
