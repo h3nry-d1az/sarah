@@ -19,6 +19,7 @@ const kickcmd     = require("./commands/kick").kickcmd
 const warncmd     = require("./commands/warn").warncmd
 const unwarncmd   = require('./commands/unwarn').unwarncmd
 const warnscmd    = require("./commands/warns").warnscmd
+const setwarnscmd = require("./commands/setwarns").setwarnscmd
 const clscmd      = require("./commands/cls").clscmd
 const asciicmd    = require("./commands/ascii").asciicmd
 
@@ -112,6 +113,11 @@ client.on('messageCreate', async (message) => {
 
     case "warns":
       await warnscmd(message, args, client)
+      break;
+
+    case "setwarns":
+      await setwarnscmd(message)
+      console.log("♻️ - " + styles.stylize("The WARNINGS MODULE has been changed", "green"));
       break;
 
     case "cls":
