@@ -133,7 +133,7 @@ client.on('messageCreate', async (message) => {
       break;
 
     case "rand":
-      randcmd(message);
+      randcmd(message, args);
       break;
 
     case "develop":
