@@ -1,7 +1,7 @@
 <h1 align="center"> sarah </h1>
 <p align="center"> <a href="https://dottedco.github.io/">Our website</a> — <a href="https://dottedco.github.io/sarah/">sarah project's website</a> </p>
 
-Welcome to the main site of the **sarah** project, a general purpose, configurable and highly reliable discord bot made entirely in pure *JavaScript* with only a few dependencies. Sarah is totally open-source software, so you are free to contribute and make the changes you want to this project's source code. In the following steps, we'll guide you through the process of installing **sarah** in your discord server and deploying it.
+Welcome to the main site of the **sarah** project, a general purpose, configurable and highly reliable discord bot made entirely in pure *JavaScript* with only a few dependencies. Sarah is totally open source software, so feel free to contribute and make the changes you want to this project's source code. In the following steps, we'll guide you through the process of installing **sarah** in your discord server and deploying it.
 
 1. [Forking and installation](#-forking-and-installation-)
 2. [Configuration](#-configuration-)
@@ -19,7 +19,47 @@ And finally, you will just have to set up your deployment workflow (we personall
 <br>
 <br>
 
-## MIT License
+<h2 align="center"> commands </h2>
+The <b>sarah</b> bot comes by default with a wide variety of useful commands for your server, which we are detailed below. With this purpose in mind, we would like to detail the notation used below:
+<ul>
+  <li> <code>s!</code> will be the default prefix in this notation. </li>
+  <li> <code>s!command [param]</code> means this command requires a parameter. </li>
+  <li> <code>s!command (param)</code> means this command supports an optional parameter. </li>
+  <li> 👮 <code>s!command</code> means this command can only be run by administrators </li>
+</ul>
+With this notation already detailed, let's go with the commands:
+<ul>
+  <li> 👮 <code>s!ban [user]</code>: When you insert a tag after the command, you ban the pinged user. </li>
+  <li> 👮 <code>s!kick [user]</code>: When you insert a tag after the command, you kick the pinged user. </li>
+  <li> 👮 <code>s!cls [number]</code>: If you write a number between 1-250 after typing this command, you delete that number of msgs. </li>
+  <li> 👮 <code>s!lock (channel)</code>: If you type this command on a channel, that channel gets locked. </li>
+  <li> 👮 <code>s!unlock (channel)</code>: If you type this command on a channel, that channel gets unlocked. </li>
+  <li> 👮 <code>s!warn [user]</code>: When you insert a tag after the command, you warn the pinged user. </li>
+  <li> 👮 <code>s!unwarn [user]</code>: When you insert a tag after the command, you unwarn the pinged user. </li>
+  <li> 👮 <code>s!warns</code>: The bot sends an embed with the warndes users in every server it is. </li>
+  <li> 👮 <code>s!setwarns [file]</code>: Given an attached JSON file, the server warnings will be replaced by the given in that file. </li>
+  <li> 👮 <code>s!shutdown</code>: Just shutdown the bot until the <code>turnon</code> command is called. </li>
+  <li> 👮 <code>s!turnon</code>: Turns on the bot again. </li>
+  <li> <code>s!ping</code>: Simply replies with <code>pong</code>.</li>
+  <li> <code>s!help</code>: This command shows you <b>sarah</b>'s commands.</li>
+  <li> <code>s!pf [user]</code>: If you ping a user before the command, you see his/her profile photo.</li>
+  <li> <code>s!cmds</code>: You're actually using this command.</li>
+  <li> <code>s!bans</code>: The bot sends a list with all the banned users.</li>
+  <li> <code>s!ascii [text]</code>: The bot sends a beauty text.</li>
+  <li> <code>s!meme</code>: Sends a random meme.</li>
+  <li> <code>s!userinfo [user]</code>: The bot sends an embed with the user's properties.</li>
+  <li> <code>s!srvinfo</code>: The bot sends an embed with the server's properties.</li>
+  <li> <code>s!rand (number) (number)</code>: The bot sends a random number between a given interval.</li>
+  <li> <code>s!dice</code>: The bot sends a random number from <code>0</code> to <code>6</code>.</li>
+  <li> <code>s!develop</code>: The bot sends an embed with the commands wich are on development.</li>
+  <li> <code>s!emojis</code>: The bot sends an embed with all of this server's exclusive emojis.</li>
+  <li> <code>s!ytsearch (text)</code>: Searches YouTube for a video related to the given query.</li>
+</ul>
+
+<br>
+<br>
+
+<h2 align="center"> license </h2>
 
 #### Copyright (c) 2022 dotted software
 
