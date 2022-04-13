@@ -5,30 +5,30 @@ const client = new Client({
 
 const styles = require("./styles");
 
-const pingcmd = require('./commands/ping').pingcmd
-const helpcmd     = require("./commands/help").helpcmd
-const cmdscmd     = require("./commands/cmds").cmdscmd
-const pfcmd       = require("./commands/pf").pfcmd
-const memecmd     = require("./commands/meme").memecmd
-const srvinfocmd  = require("./commands/srvinfo").srvinfocmd
-const userinfocmd = require("./commands/userinfo").userinfocmd
-const developcmd  = require("./commands/develop").developcmd
-const lockcmd     = require("./commands/lock").lockcmd
-const unlockcmd   = require("./commands/unlock").unlockcmd
 const bancmd      = require("./commands/ban").bancmd
 const kickcmd     = require("./commands/kick").kickcmd
+const clscmd      = require("./commands/cls").clscmd
+const lockcmd     = require("./commands/lock").lockcmd
+const unlockcmd   = require("./commands/unlock").unlockcmd
 const warncmd     = require("./commands/warn").warncmd
 const unwarncmd   = require('./commands/unwarn').unwarncmd
 const warnscmd    = require("./commands/warns").warnscmd
 const setwarnscmd = require("./commands/setwarns").setwarnscmd
-const clscmd      = require("./commands/cls").clscmd
-const banscmd     = require("./commands/bans").banscmd
-const asciicmd    = require("./commands/ascii").asciicmd
-const randcmd     = require("./commands/rand").randcmd
-const dicecmd     = require("./commands/dice").dicecmd
-const emojiscmd   = require("./commands/emojis").emojiscmd
 const shutdowncmd = require("./commands/shutdown").shutdowncmd
 const turnoncmd = require('./commands/turnon').turnoncmd
+const pingcmd     = require('./commands/ping').pingcmd
+const helpcmd     = require("./commands/help").helpcmd
+const pfcmd       = require("./commands/pf").pfcmd
+const cmdscmd     = require("./commands/cmds").cmdscmd
+const banscmd     = require("./commands/bans").banscmd
+const asciicmd    = require("./commands/ascii").asciicmd
+const memecmd     = require("./commands/meme").memecmd
+const userinfocmd = require("./commands/userinfo").userinfocmd
+const srvinfocmd  = require("./commands/srvinfo").srvinfocmd
+const randcmd     = require("./commands/rand").randcmd
+const dicecmd     = require("./commands/dice").dicecmd
+const developcmd  = require("./commands/develop").developcmd
+const emojiscmd   = require("./commands/emojis").emojiscmd
 
 const { settings } = require("./settings");
 let state = 1   // 0 for off, 1 for on
@@ -63,45 +63,6 @@ client.on('messageCreate', async (message) => {
   console.log("🔡 - I've recieved the following command: " + recieved);
 
   switch (command) {
-    case "ping":
-      await pingcmd(message);
-      break;
-
-    case "help":
-      await helpcmd(message);
-      console.log("😊 - " + styles.stylize("We have helped someone!!", "cyan", "none", ["bright"]));
-      break;
-
-    case "cmds":
-      await cmdscmd(message, 'Tese are functions of my commands', 'GOLD');
-      break;
-
-    case "pf":
-      await pfcmd(message);
-      break;
-
-    case "meme":
-      await memecmd(message);
-      break;
-
-    case "srvinfo":
-      await srvinfocmd(message);
-      break;
-
-    case "userinfo":
-      await userinfocmd(message);
-      break;
-
-    case "lock":
-      await lockcmd(message, args);
-      console.log("🔒 - " + styles.stylize(`The ${message.channel} channel has been LOCKED`, "yellow"));
-      break;
-  
-    case "unlock":
-      await unlockcmd(message, args);
-      console.log("🔓 - " + styles.stylize(`The ${args[0] || message.channel} channel has been UNLOCKED`, "blue"));
-      break;
-
     case "ban":
       await bancmd(message, args);
       console.log("❌ - " + styles.stylize(`The user ${message.mentions.members.first() || message.guild.members.cache.get(args[0])} has been BANNED`, "red"));
@@ -111,7 +72,22 @@ client.on('messageCreate', async (message) => {
       await kickcmd(message, args);
       console.log("⏏️ - " + styles.stylize(`The user ${message.mentions.members.first() || message.guild.members.cache.get(args[0])} has been KICKED`, 'yellow'));
       break;
-        
+
+    case "cls":
+      clscmd(message, args);
+      console.log("🗑️ - " + styles.stylize(`We have deleted ${args[0]} messages`, "yellow"));
+      break;
+
+    case "lock":
+      await lockcmd(message, args);
+      console.log("🔒 - " + styles.stylize(`The ${message.channel} channel has been LOCKED`, "yellow"));
+      break;
+
+    case "unlock":
+      await unlockcmd(message, args);
+      console.log("🔓 - " + styles.stylize(`The ${args[0] || message.channel} channel has been UNLOCKED`, "blue"));
+      break;
+
     case "warn":
       await warncmd(message, args)
       console.log("😣 - " + styles.stylize(`The user ${message.mentions.members.first() || message.guild.members.cache.get(args[0])} has been WARNED`, "yellow"));
@@ -131,17 +107,51 @@ client.on('messageCreate', async (message) => {
       console.log("♻️ - " + styles.stylize("The WARNINGS MODULE has been changed", "green"));
       break;
 
-    case "cls":
-      clscmd(message, args);
-      console.log("🗑️ - " + styles.stylize(`We have deleted ${args[0]} messages`, "yellow"));
+    case "shutdown":
+      await shutdowncmd(message);
+      state = 0;
       break;
-  
+
+    case "turnon":
+      await turnoncmd(message);
+      state = 1;
+      break;
+
+    case "ping":
+      await pingcmd(message);
+      break;
+
+    case "help":
+      await helpcmd(message);
+      console.log("😊 - " + styles.stylize("We have helped someone!!", "cyan", "none", ["bright"]));
+      break;
+
+    case "pf":
+      await pfcmd(message);
+      break;
+    
+    case "cmds":
+      await cmdscmd(message, 'Tese are functions of my commands', 'GOLD');
+      break;
+
     case "bans":
       banscmd(message);
       break;
 
     case "ascii":
       asciicmd(message, args);
+      break;
+
+    case "meme":
+      await memecmd(message);
+      break;
+
+    case "userinfo":
+      await userinfocmd(message);
+      break;
+
+    case "srvinfo":
+      await srvinfocmd(message);
       break;
 
     case "rand":
@@ -152,22 +162,12 @@ client.on('messageCreate', async (message) => {
       dicecmd(message);
       break;
 
-    case "emojis":
-      emojiscmd(message);
-      break;
-
     case "develop":
       developcmd(message);
       break;
 
-    case "shutdown":
-      await shutdowncmd(message);
-      state = 0;
-      break;
-
-    case "turnon":
-      await turnoncmd(message);
-      state = 1;
+    case "emojis":
+      emojiscmd(message);
       break;
 
     default:
