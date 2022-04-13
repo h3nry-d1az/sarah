@@ -22,6 +22,8 @@ const warnscmd    = require("./commands/warns").warnscmd
 const setwarnscmd = require("./commands/setwarns").setwarnscmd
 const clscmd      = require("./commands/cls").clscmd
 const asciicmd    = require("./commands/ascii").asciicmd
+const shutdowncmd = require("./commands/shutdown").shutdowncmd
+const turnoncmd = require('./commands/turnon').turnoncmd
 
 const settings = require("./settings.json");
 let state = 1   // 0 for off, 1 for on
@@ -134,16 +136,12 @@ client.on('messageCreate', async (message) => {
       break;
 
     case "shutdown":
-      if(!message.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) return message.reply("`Seems like you don't have permissions to shut down the bot`");
-      console.log("💣 - " + styles.stylize("Shutting down the bot...", "red"));
-      await message.reply("`This bot has been shut down, type turnon to turn on the bot again...`");
+      await shutdowncmd(message);
       state = 0;
       break;
 
     case "turnon":
-      if(!message.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) return message.reply("`Seems like you don't have permissions to turn on the bot`");
-      console.log("🔌 - " + styles.stylize("Turning on the bot...", "green"));
-      await message.reply("`This bot has been turned on again...`");
+      await turnoncmd(message);
       state = 1;
       break;
 
