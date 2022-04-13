@@ -25,6 +25,7 @@ const clscmd      = require("./commands/cls").clscmd
 const asciicmd    = require("./commands/ascii").asciicmd
 const randcmd     = require("./commands/rand").randcmd
 const dicecmd     = require("./commands/dice").dicecmd
+const emojiscmd   = require("./commands/emojis").emojiscmd
 const shutdowncmd = require("./commands/shutdown").shutdowncmd
 const turnoncmd = require('./commands/turnon').turnoncmd
 
@@ -144,6 +145,10 @@ client.on('messageCreate', async (message) => {
 
     case "dice":
       dicecmd(message);
+      break;
+
+    case "emojis":
+      emojiscmd(message);
       break;
 
     case "develop":

@@ -8,9 +8,13 @@ let emojiscmd = async message => {
     .setFooter(message.member.displayName, message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
 
-    message.guild.emojis.cache.forEach(em => {
-        emojis.addField({name: `\`:${em.name}:\``, value: em, inline: false})
+    const emotes = message.guild.emojis.cache.map((e) => {
+        return [`${e}`, `\`:${e.name}:\``]
     });
+    
+    for (let em of emotes) {
+        emojis.addFields({name: em[1], value: em[0], inline: true})
+    }
 
     message.reply({ embeds: [emojis] })
 }
