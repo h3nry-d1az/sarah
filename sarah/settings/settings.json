@@ -124,7 +124,147 @@
             "logicon": "🔌",
             "logmsg": "The bot has been TURNED ON again...",
             "logcolor": "yellow"
-        }
+        },
+        {
+            "name": "ping",
+            "desc": "Simply replies with `pong`",
+            "path": "commands/ping.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "help",
+            "desc": "This command shows you my commands",
+            "path": "commands/help.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "pf",
+            "desc": "If you ping a user before the command, you see his/her profile photo",
+            "path": "commands/pf.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "cmds",
+            "desc": "You're actually using this command",
+            "path": "commands/cmds.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "bans",
+            "desc": "The bot sends a list with all the banned users",
+            "path": "commands/bans.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "ascii",
+            "desc": "The bot sends a beauty text",
+            "path": "commands/ascii.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "meme",
+            "desc": "Sends a random meme",
+            "path": "commands/meme.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "userinfo",
+            "desc": "The bot sends an embed with the user's properties",
+            "path": "commands/userinfo.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "srvinfo",
+            "desc": "The bot sends an embed with the server's properties",
+            "path": "commands/srvinfo.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "rand",
+            "desc": "The bot sends a random number between a given interval",
+            "path": "commands/rand.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "dice",
+            "desc": "The bot sends a random number from `0` to `6`",
+            "path": "commands/dice.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "develop",
+            "desc": "The bot sends an embed with the commands wich are on development",
+            "path": "commands/develop.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "emojis",
+            "desc": "The bot sends an embed with all of this server's exclusive emojis",
+            "path": "commands/emojis.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "ytsearch",
+            "desc": "Searches YouTube for a video related to the given query",
+            "path": "commands/ytsearch.js",
+            "admin": false,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        }                                                                                                    
     ],
 
     "token": ""
