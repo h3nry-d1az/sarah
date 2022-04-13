@@ -14,5 +14,118 @@
     "width": 1000,
     "whitespaceBreak": false,
 
+    "commands": [
+        {
+            "name": "ban",
+            "desc": "When you insert a tag after the command, you ban the pinged user",
+            "path": "commands/ban.js",
+            "admin": true,
+            "log": true,
+            "logicon": "❌",
+            "logmsg": "An user has been BANNED from the server...",
+            "logcolor": "red"
+        },
+        {
+            "name": "kick",
+            "desc": "When you insert a tag after the command, you kick the pinged user",
+            "path": "commands/kick.js",
+            "admin": true,
+            "log": true,
+            "logicon": "⏏️",
+            "logmsg": "An user has been KICKED from the server...",
+            "logcolor": "yellow"
+        },
+        {
+            "name": "cls",
+            "desc": "If you write a number between 1-250 after typing this command, you delete that number of msgs",
+            "path": "commands/cls.js",
+            "admin": true,
+            "log": true,
+            "logicon": "🗑️",
+            "logmsg": "We have deleted a few messages from the server...",
+            "logcolor": "yellow"
+        },
+        {
+            "name": "lock",
+            "desc": "If you type this command on a channel, that channel gets locked",
+            "path": "commands/lock.js",
+            "admin": true,
+            "log": true,
+            "logicon": "🔒",
+            "logmsg": "A channel has been LOCKED...",
+            "logcolor": "yellow"
+        },
+        {
+            "name": "unlock",
+            "desc": "If you type this command on a channel, that channel gets unlocked",
+            "path": "commands/unlock.js",
+            "admin": true,
+            "log": true,
+            "logicon": "🔓",
+            "logmsg": "A channel has been UNLOCKED...",
+            "logcolor": "blue"
+        },
+        {
+            "name": "warn",
+            "desc": "When you insert a tag after the command, you warn the pinged user",
+            "path": "commands/warn.js",
+            "admin": true,
+            "log": true,
+            "logicon": "😣",
+            "logmsg": "An user has been WARNED...",
+            "logcolor": "yellow"
+        },
+        {
+            "name": "unwarn",
+            "desc": "When you insert a tag after the command, you unwarn the pinged user",
+            "path": "commands/unwarn.js",
+            "admin": true,
+            "log": true,
+            "logicon": "👍",
+            "logmsg": "An user has been UNWARNED...",
+            "logcolor": "blue"
+        },
+        {
+            "name": "warns",
+            "desc": "The bot sends an embed with the warndes users in every server he is",
+            "path": "commands/warns.js",
+            "admin": true,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "setwarns",
+            "desc": "Given an attached JSON file, the server warnings will be replaced by the given in that file",
+            "path": "commands/setwarns.js",
+            "admin": true,
+            "log": true,
+            "logicon": "♻️",
+            "logmsg": "The WARNINGS MODULE has been changed...",
+            "logcolor": "green"
+        },
+        {
+            "name": "shutdown",
+            "desc": "Just shutdown the bot until the `turnon` command is called",
+            "path": "commands/shutdown.js",
+            "admin": true,
+            "log": true,
+            "logicon": "💣",
+            "logmsg": "The bot has been SHUT DOWN temporarily...",
+            "logcolor": "red"
+        },
+        {
+            "name": "turnon",
+            "desc": "Turns on the bot again",
+            "path": "commands/turnon.js",
+            "admin": true,
+            "log": true,
+            "logicon": "🔌",
+            "logmsg": "The bot has been TURNED ON again...",
+            "logcolor": "yellow"
+        }
+    ],
+
     "token": ""
 }

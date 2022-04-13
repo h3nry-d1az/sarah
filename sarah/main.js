@@ -114,6 +114,7 @@ client.on('messageCreate', async (message) => {
       break;
 
     case "turnon":
+      if (state === 1) {message.reply("`The bot is already on`"); break}
       await turnoncmd(message);
       state = 1;
       break;
