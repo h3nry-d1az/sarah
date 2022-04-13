@@ -5,6 +5,7 @@ const client = new Client({
 
 const styles = require("./styles");
 
+const pingcmd = require('./commands/ping').pingcmd
 const helpcmd     = require("./commands/help").helpcmd
 const cmdscmd     = require("./commands/cmds").cmdscmd
 const pfcmd       = require("./commands/pf").pfcmd
@@ -59,6 +60,10 @@ client.on('messageCreate', async (message) => {
   console.log("🔡 - I've recieved the following command: " + recieved);
 
   switch (command) {
+    case "ping":
+      await pingcmd(message);
+      break;
+
     case "help":
       await helpcmd(message);
       console.log("😊 - " + styles.stylize("We have helped someone!!", "cyan", "none", ["bright"]));

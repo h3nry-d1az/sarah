@@ -20,6 +20,7 @@ let cmdscmd = async (message, description, color) => {
       {name: `:police_officer:| **${settings.prefix}-setwarns:**`, value: "*Given an attached JSON file, the server warnings will be replaced by the given in that file*", inline: true},
       {name: `:police_officer:| **${settings.prefix}-shutdown:**`, value: "*Just shutdown the bot until the `turnon` command is called*", inline: true},
       {name: `:police_officer:| **${settings.prefix}-turnon:**`, value: "*Turns on the bot again*", inline: true},
+      {name: `:space_invader:| **${settings.prefix}-ping:**`, value: "*Simply replies with* `pong`", inline: true},
       {name: `:space_invader:| **${settings.prefix}-help:**`, value: "*This command shows you my commands*", inline: true},
       {name: `:space_invader:| **${settings.prefix}-pf:**`, value: "*If you ping a user before the command, you see his/her profile photo*", inline: true},
       {name: `:space_invader:| **${settings.prefix}-cmds:**`, value: "*You`re actually using this command*", inline: true},
