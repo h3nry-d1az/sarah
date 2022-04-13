@@ -22,6 +22,7 @@ const unwarncmd   = require('./commands/unwarn').unwarncmd
 const warnscmd    = require("./commands/warns").warnscmd
 const setwarnscmd = require("./commands/setwarns").setwarnscmd
 const clscmd      = require("./commands/cls").clscmd
+const banscmd     = require("./commands/bans").banscmd
 const asciicmd    = require("./commands/ascii").asciicmd
 const randcmd     = require("./commands/rand").randcmd
 const dicecmd     = require("./commands/dice").dicecmd
@@ -135,6 +136,10 @@ client.on('messageCreate', async (message) => {
       console.log("🗑️ - " + styles.stylize(`We have deleted ${args[0]} messages`, "yellow"));
       break;
   
+    case "bans":
+      banscmd(message);
+      break;
+
     case "ascii":
       asciicmd(message, args);
       break;

@@ -24,6 +24,7 @@ let cmdscmd = async (message, description, color) => {
       {name: `:space_invader:| **${settings.prefix}help:**`, value: "*This command shows you my commands*", inline: true},
       {name: `:space_invader:| **${settings.prefix}pf:**`, value: "*If you ping a user before the command, you see his/her profile photo*", inline: true},
       {name: `:space_invader:| **${settings.prefix}cmds:**`, value: "*You`re actually using this command*", inline: true},
+      {name: `:space_invader:| **${settings.prefix}bans:**`, value: "*The bot sends a list with all the banned users.*", inline: true},
       {name: `:space_invader:| **${settings.prefix}ascii:**`, value: "*The bot sends a beauty text.*", inline: true},
       {name: `:space_invader:| **${settings.prefix}meme:**`, value: "*Sends a random meme*", inline: true},
       {name: `:space_invader:| **${settings.prefix}userinfo:**`, value: "*The bot sends an embed with the user's properties*", inline: true},
