@@ -9,7 +9,7 @@ let developcmd = async message => {
     .setFooter(message.member.displayName, message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
     .addFields(
-      {name: ":police_officer:| HD-8ball", value: "**TThis command allows you to ask a question to the bot**", inline: true}
+      {name: ":x: | No command in development at the moment", value: "**Sorry for the lack of good ideas :sweat_smile:**", inline: true}
     )
 
     message.reply({ embeds: [develop] })
