@@ -1,4 +1,4 @@
-let warnings = require("./warnings.json");
+let warnings = require("./settings/warnings.json");
 
 let warn =   user => { if (!warnings[user]) {warnings[user] = 1} else {warnings[user] += 1}}
 let unwarn = user => { if (!warnings[user]) {return} else {warnings[user] -= 1}}

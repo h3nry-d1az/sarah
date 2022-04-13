@@ -1,6 +1,6 @@
 const {  MessageEmbed } = require('discord.js');
 const axios = require("axios");
-const settings = require("../settings.json")
+const { settings } = require("../settings")
 
 let memecmd = async message => {
     axios

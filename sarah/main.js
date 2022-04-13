@@ -25,7 +25,7 @@ const asciicmd    = require("./commands/ascii").asciicmd
 const shutdowncmd = require("./commands/shutdown").shutdowncmd
 const turnoncmd = require('./commands/turnon').turnoncmd
 
-const settings = require("./settings.json");
+const { settings } = require("./settings");
 let state = 1   // 0 for off, 1 for on
 
 

@@ -11,7 +11,7 @@ Welcome to the main site of the **sarah** project, a general purpose, configurab
 To install <b>sarah</b> in your favourite server, first you will have to fork this repository by clicking the fork button, after that, wait for a while until the process is completed and you will have succesfully forked the <b>sarah</b> repository.
 
 <h4 align="center"> Configuration </h4>
-After forking <b>sarah</b>, you will have to configure it, this can be done by editing the <code>./sarah/settings.json</code> module with your favourite code editor. You must fill in all the properties.
+After forking <b>sarah</b>, you will have to configure it, this can be done by editing the <code>./sarah/settings/settings.json</code> module with your favourite code editor. You must fill in all the properties.
 
 <h4 align="center"> Bot deployment </h4>
 And finally, you will just have to set up your deployment workflow (we personally recommend <a href="https://www.heroku.com/">Heroku</a>) and your bot will be successfully deployed.

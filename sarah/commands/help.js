@@ -1,5 +1,5 @@
 const {  MessageEmbed } = require('discord.js');
-const settings = require("../settings.json");
+const { settings } = require("../settings");
 
 let helpcmd = async message => {
     const help = new MessageEmbed()
