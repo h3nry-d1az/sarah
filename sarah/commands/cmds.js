@@ -29,6 +29,7 @@ let cmdscmd = async (message, description, color) => {
       {name: `:space_invader:| **${settings.prefix}-userinfo:**`, value: "*The bot sends an embed with the user's properties*", inline: true},
       {name: `:space_invader:| **${settings.prefix}-srvinfo:**`, value: "*The bot sends an embed with the server's properties*", inline: true},
       {name: `:space_invader:| **${settings.prefix}-rand:**`, value: "*The bot sends a random number between a given interval*", inline: true},
+      {name: `:space_invader:| **${settings.prefix}-dice:**`, value: "*The bot sends a random number from* `0` *to* `6`", inline: true},
       {name: `:space_invader:| **${settings.prefix}-develop:**`, value: "*The bot sends an embed with the commands wich are on development*", inline: true},
     )
 

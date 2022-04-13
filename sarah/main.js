@@ -24,6 +24,7 @@ const setwarnscmd = require("./commands/setwarns").setwarnscmd
 const clscmd      = require("./commands/cls").clscmd
 const asciicmd    = require("./commands/ascii").asciicmd
 const randcmd     = require("./commands/rand").randcmd
+const dicecmd     = require("./commands/dice").dicecmd
 const shutdowncmd = require("./commands/shutdown").shutdowncmd
 const turnoncmd = require('./commands/turnon').turnoncmd
 
@@ -139,6 +140,10 @@ client.on('messageCreate', async (message) => {
 
     case "rand":
       randcmd(message, args);
+      break;
+
+    case "dice":
+      dicecmd(message);
       break;
 
     case "develop":

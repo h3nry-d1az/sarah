@@ -10,7 +10,7 @@ let helpcmd = async message => {
     .setTimestamp()
     .addFields(
       {name: ":police_officer: Mod commands:", value: "**> ban, kick, cls, lock, unlock, warn, warns, setwarns, shutdown, turnon**", inline: true},
-      {name: ":space_invader: Extra commands", value: "**> help, pf, cmds, ascii, meme, userinfo, srvinfo, rand, ping, develop**", inline: true},
+      {name: ":space_invader: Extra commands", value: "**> help, pf, cmds, ascii, meme, userinfo, srvinfo, rand, dice, ping, develop**", inline: true},
       {name: "***__PD:__***:", value: "The warns embed shows you an embed with the warns of the members ON EVERY SERVER THIS BOT IS"}
     )
 
