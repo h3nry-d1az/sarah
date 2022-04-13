@@ -1,7 +1,7 @@
 const figlet = require("figlet");
 const { settings } = require("../settings")
 
-let asciicmd = async (message, args) => {
+let asciicmd = async (message, args, client, _, _) => {
     if(!args[0])
         return message.reply("`You have to type something that is between 1 and 10  caracters`")
     

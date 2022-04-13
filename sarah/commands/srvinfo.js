@@ -1,6 +1,6 @@
 const {  MessageEmbed } = require('discord.js');
 
-let srvinfocmd = async message => {
+let srvinfocmd = async (message, args, client, _, _) => {
     const sri = new MessageEmbed()
     .setTitle("**Server Info:**")
     .setDescription("This command shows you the server info")

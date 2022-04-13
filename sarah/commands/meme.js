@@ -2,7 +2,7 @@ const {  MessageEmbed } = require('discord.js');
 const axios = require("axios");
 const { settings } = require("../settings")
 
-let memecmd = async message => {
+let memecmd = async (message, args, client, _, _) => {
     axios
     .get(`https://memes.blademaker.tv/api?lang=${settings.language}`)
     .then(async function(response) {

@@ -36,7 +36,7 @@ With this notation already detailed, let's go with the commands:
   <li> 👮 <code>s!unlock (channel)</code>: If you type this command on a channel, that channel gets unlocked. </li>
   <li> 👮 <code>s!warn [user]</code>: When you insert a tag after the command, you warn the pinged user. </li>
   <li> 👮 <code>s!unwarn [user]</code>: When you insert a tag after the command, you unwarn the pinged user. </li>
-  <li> 👮 <code>s!warns</code>: The bot sends an embed with the warndes users in every server it is. </li>
+  <li> 👮 <code>s!warns (user)</code>: The bot sends an embed with the warndes users in every server it is. </li>
   <li> 👮 <code>s!setwarns [file]</code>: Given an attached JSON file, the server warnings will be replaced by the given in that file. </li>
   <li> 👮 <code>s!shutdown</code>: Just shutdown the bot until the <code>turnon</code> command is called. </li>
   <li> 👮 <code>s!turnon</code>: Turns on the bot again. </li>

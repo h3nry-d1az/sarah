@@ -1,6 +1,6 @@
 const {  MessageEmbed } = require('discord.js');
 
-let userinfocmd = async message => {
+let userinfocmd = async (message, args, client, _, _) => {
     let usuario = message.mentions.users.first() || message.author;
 
     const ui = new MessageEmbed()

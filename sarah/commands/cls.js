@@ -1,6 +1,6 @@
 const {  Permissions  } = require('discord.js');
 
-let clscmd = async (message, args) => {
+let clscmd = async (message, args, client, _, _) => {
     const cuantity = args[0]
     if(!message.member.permissions.has(Permissions.FLAGS.MANAGE_MESSAGES)) return message.reply(":x:| `You haven't permissions to use this command`")
 

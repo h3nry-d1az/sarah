@@ -1,6 +1,6 @@
 const {  MessageEmbed, Permissions  } = require('discord.js');
 
-let bancmd = async (message, args) => {
+let bancmd = async (message, args, client, _, _) => {
     const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
     if(!message.member.permissions.has(Permissions.FLAGS.BAN_MEMBERS)) return message.reply("`Seems like you don't have permissions to ban members`");
 

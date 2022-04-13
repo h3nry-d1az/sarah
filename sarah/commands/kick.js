@@ -1,6 +1,6 @@
 const {  MessageEmbed, Permissions  } = require('discord.js');
 
-let kickcmd = async (message, args) => {
+let kickcmd = async (message, args, client, _, _) => {
     const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
     if(!message.member.permissions.has(Permissions.FLAGS.KICK_MEMBERS)) return message.reply("`Seems like you don't have permissions to kick members`");
 

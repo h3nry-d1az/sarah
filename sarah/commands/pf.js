@@ -1,6 +1,6 @@
 const {  MessageEmbed } = require('discord.js');
 
-let pfcmd = async message => {
+let pfcmd = async (message, args, client, _, _) => {
     const Target = await message.mentions.users.first() || message.author;
 
     const pf = new MessageEmbed()

@@ -1,6 +1,6 @@
 const {  MessageEmbed } = require('discord.js');
 
-let emojiscmd = async message => {
+let emojiscmd = async (message, args, client, _, _) => {
     const emojis = new MessageEmbed()
     .setTitle("Server exclusive emojis:")
     .setDescription(`These are this server's exclusive emojis:`)

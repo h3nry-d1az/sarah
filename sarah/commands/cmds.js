@@ -1,7 +1,7 @@
 const {  MessageEmbed } = require('discord.js');
 const { settings } = require("../settings")
 
-let cmdscmd = async (message, description, color) => {
+let cmdscmd = async (message, args, client, description, color) => {
     const cmds = new MessageEmbed()
     .setTitle("Commands:")
     .setDescription(`*${description}*`)

@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const styles = require("../styles")
 
-let banscmd = async message => {
+let banscmd = async (message, args, client, _, _) => {
     message.guild.bans.fetch().then(bans => {
         let list = bans.map(user => user.user.username);
         let text = ""
