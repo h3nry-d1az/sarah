@@ -1,4 +1,4 @@
-const {  Client, Intents, Permissions  } = require('discord.js');
+const {  Client, Intents  } = require('discord.js');
 const client = new Client({
   intents:[Intents.FLAGS.GUILDS,Intents.FLAGS.GUILD_MESSAGES],
 });
@@ -22,6 +22,7 @@ const warnscmd    = require("./commands/warns").warnscmd
 const setwarnscmd = require("./commands/setwarns").setwarnscmd
 const clscmd      = require("./commands/cls").clscmd
 const asciicmd    = require("./commands/ascii").asciicmd
+const randcmd     = require("./commands/rand").randcmd
 const shutdowncmd = require("./commands/shutdown").shutdowncmd
 const turnoncmd = require('./commands/turnon').turnoncmd
 
@@ -129,6 +130,10 @@ client.on('messageCreate', async (message) => {
   
     case "ascii":
       asciicmd(message, args);
+      break;
+
+    case "rand":
+      randcmd(message);
       break;
 
     case "develop":
