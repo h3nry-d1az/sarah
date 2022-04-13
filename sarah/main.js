@@ -29,6 +29,7 @@ const randcmd     = require("./commands/rand").randcmd
 const dicecmd     = require("./commands/dice").dicecmd
 const developcmd  = require("./commands/develop").developcmd
 const emojiscmd   = require("./commands/emojis").emojiscmd
+const ytsearchcmd = require("./commands/ytsearch").ytsearchcmd
 
 const { settings } = require("./settings");
 let state = 1   // 0 for off, 1 for on
@@ -168,6 +169,10 @@ client.on('messageCreate', async (message) => {
 
     case "emojis":
       emojiscmd(message);
+      break;
+
+    case "ytsearch":
+      ytsearchcmd(message, args);
       break;
 
     default:
