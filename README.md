@@ -1,11 +1,19 @@
 <h1 align="center"> sarah </h1>
 <p align="center"> <a href="https://dottedco.github.io/">Our website</a> — <a href="https://dottedco.github.io/sarah/">sarah project's website</a> </p>
 
-Welcome to the main site of the **sarah** project, a general purpose, configurable and highly reliable discord bot made entirely in pure *JavaScript* with only a few dependencies. Sarah is totally open source software, so feel free to contribute and make the changes you want to this project's source code. In the following steps, we'll guide you through the process of installing **sarah** in your discord server and deploying it.
+Welcome to the main site of the **sarah** project, a general purpose, configurable and highly reliable discord bot made entirely in pure *JavaScript* with only a few dependencies. Sarah is totally open source software, so feel free to contribute and make the changes you want to this project's source code. Also, if you like this project and want to help us in an indirect way, please give us a star, we will really appreciate it.
+
+<br>
+<br>
+
+<h2 align="center"> installation </h2>
+In the following steps, we'll guide you through the <i>(very easy)</i> process of installing the <b>sarah</b> bot in your discord server and deploying it.
+<br>
 
 1. [Forking and installation](#-forking-and-installation-)
 2. [Configuration](#-configuration-)
 3. [Bot deployment](#-bot-deployment-)
+4. [Adding more commands](#-adding-more-commands-)
 
 <h4 align="center"> Forking and installation </h4>
 To install <b>sarah</b> in your favourite server, first you will have to fork this repository by clicking the fork button, after that, wait for a while until the process is completed and you will have succesfully forked the <b>sarah</b> repository.
@@ -15,6 +23,25 @@ After forking <b>sarah</b>, you will have to configure it, this can be done by e
 
 <h4 align="center"> Bot deployment </h4>
 And finally, you will just have to set up your deployment workflow (we personally recommend <a href="https://www.heroku.com/">Heroku</a>) and your bot will be successfully deployed.
+
+<h4 align="center"> Adding more commands </h4>
+Adding custom commands to the server is also an easy task, you only have to follow those three instructions:
+<ol>
+  <li> Firstly, you need to create its own JavaScript module in the <code>./sarah/commands/</code> directory, which must be called <code>[command].js</code>.</li>
+  <li> Then, write the command program within its main function, which must be called <code>[command]cmd</code> and must recieve five arguments: <code>message, args, client, _, __</code> <i>(the last two arguments are useless, but your function must recieve them; otherwise it will generate an error)</i>. </li>
+  <li> And finally go to the <code>commands</code> section of the <code>settings.json</code> module and add your command there as an object with the following properties:</li></ol>
+<ul>
+  <li><b>name</b>: <code>string</code></li>
+  <li><b>desc</b>: <code>string</code></li>
+  <li><b>path</b>: <code>string</code></li>
+  <li><b>admin</b>: <code>bool</code></li>
+  <li><b>state</b>: <code>0</code> or <code>1</code></li>
+  <li><b>log</b>: <code>bool</code></li>
+  <li><b>logicon</b>: <code>string</code></li>
+  <li><b>logmsg</b>: <code>string</code></li>
+  <li><b>logcolor</b>: <code>string</code></li>
+</ul>
+And your command will be <b>ready for action</b>!! 
 
 <br>
 <br>
@@ -37,6 +64,7 @@ With this notation already detailed, let's go with the commands:
   <li> 👮 <code>s!warn [user]</code>: When you insert a tag after the command, you warn the pinged user. </li>
   <li> 👮 <code>s!unwarn [user]</code>: When you insert a tag after the command, you unwarn the pinged user. </li>
   <li> 👮 <code>s!warns (user)</code>: The bot sends an embed with the warndes users in every server it is. </li>
+  <li> 👮 <code>s!wjson </code>: The bot sends a JSON object with the warned users in every server it is. </li>
   <li> 👮 <code>s!setwarns [file]</code>: Given an attached JSON file, the server warnings will be replaced by the given in that file. </li>
   <li> 👮 <code>s!shutdown</code>: Just shutdown the bot until the <code>turnon</code> command is called. </li>
   <li> 👮 <code>s!turnon</code>: Turns on the bot again. </li>
