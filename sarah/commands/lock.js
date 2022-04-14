@@ -7,7 +7,6 @@ let lockcmd = async (message, args, client, _, __) => {
     } catch (error) {
       channel = message.channel
     }
-    if(!message.member.permissions.has(Permissions.FLAGS.MANAGE_MESSAGES)) return message.reply(":x:| `You haven't permissions to use this command`")
     await channel.permissionOverwrites.edit(message.guild.id, {
       SEND_MESSAGES: false
     }).catch(err => console.log(err))

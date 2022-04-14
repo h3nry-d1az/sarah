@@ -4,7 +4,6 @@ const {  settings  } = require("../settings");
 
 let warncmd = async (message, args, client, _, __) => {
     const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
-    if(!message.member.permissions.has(Permissions.FLAGS.BAN_MEMBERS)) return message.reply("`Seems like you don't have permissions to warn members`");
 
     if(!member) return message.channel.send("`You have to ping the user or insert his ID discord number`")
     if(member === message.member) return message.channel.send("`You shouldn't try to warn yourself`")

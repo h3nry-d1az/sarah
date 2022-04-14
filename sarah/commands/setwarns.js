@@ -3,7 +3,6 @@ const { setwarns } = require("../warnings");
 const fetch = require('node-fetch');
 
 let setwarnscmd = async (message, args, client, _, __) => {
-    if(!message.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) return message.reply("`Seems like you don't have permissions to warn members`");
     const file = message.attachments.first()?.url;
     if (!file) return message.reply('``No attached file found``');
     
