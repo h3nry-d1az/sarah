@@ -1,6 +1,6 @@
 const {  MessageEmbed, Permissions  } = require('discord.js');
 
-let unlockcmd = async (message, args, client, _, _) => {
+let unlockcmd = async (message, args, client, _, __) => {
     let channel = null;
     try {
       channel = message.guild.channels.cache.get(args[0].slice(2, -1))

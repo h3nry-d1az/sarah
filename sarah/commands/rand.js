@@ -1,4 +1,4 @@
-let randcmd = async (message, args, client, _, _) => {
+let randcmd = async (message, args, client, _, __) => {
     let number;
     if (!args[0]) { number = Math.floor(Math.random() * 10 + 1) }
     else {

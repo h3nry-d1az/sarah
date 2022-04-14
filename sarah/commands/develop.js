@@ -1,7 +1,7 @@
 const {  MessageEmbed } = require('discord.js');
 const { settings } = require("../settings");
 
-let developcmd = async (message, args, client, _, _) => {
+let developcmd = async (message, args, client, _, __) => {
     const develop = new MessageEmbed()
     .setTitle("**Developing commands:**")
     .setDescription(`||Prefix: ***${settings.prefix}***|| These are the commands on development:`)

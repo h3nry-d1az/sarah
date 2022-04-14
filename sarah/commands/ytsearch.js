@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 
-let ytsearchcmd = async (message, args, client, _, _) => {
+let ytsearchcmd = async (message, args, client, _, __) => {
     if (args.length === 0) return message.reply("`You must provide a search query`")
     let url = 'https://www.youtube.com/results?search_query=' + encodeURIComponent(args.join(" "))
     let resp = await fetch(url)

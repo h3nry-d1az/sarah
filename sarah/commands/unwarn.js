@@ -1,7 +1,7 @@
 const {  MessageEmbed, Permissions } = require('discord.js');
 const {  unwarn  } = require("../warnings");
 
-let unwarncmd = async (message, args, client, _, _) => {
+let unwarncmd = async (message, args, client, _, __) => {
     const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
     if(!message.member.permissions.has(Permissions.FLAGS.BAN_MEMBERS)) return message.reply("`Seems like you don't have permissions to unwarn members`");
 

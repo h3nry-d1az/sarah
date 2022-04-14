@@ -1,7 +1,7 @@
 const {  MessageEmbed } = require('discord.js');
 const {  warns, warnsof  } = require("../warnings");
 
-let warnscmd = async (message, args, client, _, _) => {
+let warnscmd = async (message, args, client, _, __) => {
     if (args.length == 0) {
         if (Object.keys(warns()).length === 0) return message.reply("`No one has been warned yet...`")
         const warnings = new MessageEmbed()
