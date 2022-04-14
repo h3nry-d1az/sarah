@@ -14,7 +14,10 @@ let asciicmd = async (message, args, client, _, __) => {
         verticalLayout: settings.verticalLayout,
         width: settings.width,
         whitespaceBreak: settings.whitespaceBreak
-    }, (_, data) => message.channel.send("\`\`\`" + data + "\`\`\`"))
+    }, (_, data) => {
+        if (data.length === 0) return message.reply("`Couldn't convert your text, please make sure you only use alphanumeric characters...`");
+        else return message.reply("```" + data + "```")
+    })
 }
 
 module.exports.asciicmd = asciicmd
