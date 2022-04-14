@@ -46,7 +46,7 @@ client.on('messageCreate', async (message) => {
     if (cmd.admin && !message.member.permissions.has(Permissions.FLAGS.BAN_MEMBERS)) return message.reply(`:x:| Seems like you don't have permissions to use the \`${command}\` command`)
 
     let mod = await import(`./${cmd.path}`)
-    mod[command + "cmd"](message, args, client, 'These are all my commands and their functions', 'GOLD')
+    await mod[command + "cmd"](message, args, client, 'These are all my commands and their functions', 'GOLD')
 
     if (cmd.log) {
       console.log(`${cmd.logicon} — ${styles.stylize(cmd.logmsg, cmd.logcolor)}`)

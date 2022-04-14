@@ -94,8 +94,19 @@
         },
         {
             "name": "warns",
-            "desc": "The bot sends an embed with the warndes users in every server he is",
+            "desc": "The bot sends an embed with the warned users in every server he is",
             "path": "commands/warns.js",
+            "admin": true,
+            "state": 1,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": ""
+        },
+        {
+            "name": "wjson",
+            "desc": "The bot sends a JSON object with the warned users in every server he is",
+            "path": "commands/wjson.js",
             "admin": true,
             "state": 1,
             "log": false,

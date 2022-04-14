@@ -7,7 +7,7 @@ let userinfocmd = async (message, args, client, _, __) => {
     .setTitle(`${usuario.username}'s info`)
     .setColor("RANDOM")
     .setThumbnail(message.guild.iconURL())
-    .setDescription("**{General info:}**")
+    .setDescription("**${usuario.username}'s general information**")
     .setTimestamp()
     .addFields(
       {name: ":id:| *User's ID:*", value: `${usuario.id}`, inline: true},
