@@ -5,7 +5,7 @@ let clscmd = async (message, args, client, _, __) => {
 
     message.delete().then(q => {
       message.channel.bulkDelete(cuantity)
-      message.channel.send(`There have been ${cuantity} deleted messages`)
+      message.channel.send(`\`A total of ${cuantity} messages have been deleted\``)
     })
 }
 
