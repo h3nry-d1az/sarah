@@ -47,8 +47,8 @@ client.on('messageCreate', async (message) => {
 
     let mod;
 
-    try {mod = await import(`./${cmd.path}`)} catch (e) {console.log(`❌ — ${styles.stylize("Couldn't fetch and import the command module"), 'red'}`); message.reply("`I'm sorry, we are having some trouble with that command, try again later...`")}
-    try {await mod[command + "cmd"](message, args, client, 'These are all my commands and their functions', 'GOLD')} catch (e) {console.log(`❌ — ${styles.stylize("An error happened while running the command function..."), 'red'}`); message.reply("`I'm sorry, we are having some trouble with that command, try again later...`")}
+    try {mod = await import(`./${cmd.path}`)} catch (e) {console.log(`❌ — ${styles.stylize("Couldn't fetch and import the command module", 'red')}`); return message.reply("`I'm sorry, we are having some trouble with that command, try again later...`")}
+    try {await mod[command + "cmd"](message, args, client, 'These are all my commands and their functions', 'GOLD')} catch (e) {console.log(`❌ — ${styles.stylize("An error happened while running the command function...", 'red')}`); return message.reply("`I'm sorry, we are having some trouble with that command, try again later...`")}
 
     if (cmd.log) {
       console.log(`${cmd.logicon} — ${styles.stylize(cmd.logmsg, cmd.logcolor)}`)

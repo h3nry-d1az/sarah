@@ -160,6 +160,18 @@
             "ondev": false
         },
         {
+            "name": "settings",
+            "desc": "The bot sends you an embed with this bot's settings",
+            "path": "commands/settings.js",
+            "admin": true,
+            "state": 1,
+            "log": false,
+            "logicon": "",
+            "logmsg": "",
+            "logcolor": "",
+            "ondev": false
+        },
+        {
             "name": "ping",
             "desc": "Simply replies with `pong`",
             "path": "commands/ping.js",
@@ -326,7 +338,7 @@
             "logmsg": "",
             "logcolor": "",
             "ondev": false
-        }                                                                                                    
+        }
     ],
 
     "token": ""

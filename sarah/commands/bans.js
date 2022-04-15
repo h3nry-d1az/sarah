@@ -8,7 +8,7 @@ let banscmd = async (message, args, client, _, __) => {
         for (let u of list) {
             text += ` · ${u}\n`
         }
-        text = `\`${text.slice(0, -1)}\``;
+        text = `\`\`\`${text.slice(0, -1)}\`\`\``;
 
         if (text == "``") return message.reply("`No users have been banned on this server yet`")
 
