@@ -8,11 +8,16 @@ let developcmd = async (message, args, client, _, __) => {
     .setColor("GREEN")
     .setFooter(message.member.displayName, message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
-    .addFields(
-      {name: ":x: | No command in development at the moment", value: "**Sorry for the lack of good ideas :sweat_smile:**", inline: true}
-    )
-
-    message.reply({ embeds: [develop] })
+    
+    if (settings.commands.filter(c => c.ondev).length === 0) {
+      develop.addFields({name: `:x: | No commands in development at the moment`, value: `**Sorry for the lack of good ideas :sweat_smile:**`, inline: true})
+      return message.reply({ embeds: [develop] })
+    } else {
+      for (cmd of settings.commands.filter(c => c.ondev)) {
+        develop.addFields({name: `${cmd.admin ? ':police_officer:' : ':space_invader:'} | ${cmd.name}`, value: cmd.desc, inline: true})
+      }
+      message.reply({ embeds: [develop] })
+    }
 }
 
 module.exports.developcmd = developcmd

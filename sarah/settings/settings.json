@@ -24,7 +24,8 @@
             "log": true,
             "logicon": "❌",
             "logmsg": "An user has been BANNED from the server...",
-            "logcolor": "red"
+            "logcolor": "red",
+            "ondev": false
         },
         {
             "name": "kick",
@@ -35,7 +36,8 @@
             "log": true,
             "logicon": "⏏️",
             "logmsg": "An user has been KICKED from the server...",
-            "logcolor": "yellow"
+            "logcolor": "yellow",
+            "ondev": false
         },
         {
             "name": "cls",
@@ -46,7 +48,8 @@
             "log": true,
             "logicon": "🗑️",
             "logmsg": "We have deleted a few messages from the server...",
-            "logcolor": "yellow"
+            "logcolor": "yellow",
+            "ondev": false
         },
         {
             "name": "lock",
@@ -57,7 +60,8 @@
             "log": true,
             "logicon": "🔒",
             "logmsg": "A channel has been LOCKED...",
-            "logcolor": "yellow"
+            "logcolor": "yellow",
+            "ondev": false
         },
         {
             "name": "unlock",
@@ -68,7 +72,8 @@
             "log": true,
             "logicon": "🔓",
             "logmsg": "A channel has been UNLOCKED...",
-            "logcolor": "blue"
+            "logcolor": "blue",
+            "ondev": false
         },
         {
             "name": "warn",
@@ -79,7 +84,8 @@
             "log": true,
             "logicon": "😣",
             "logmsg": "An user has been WARNED...",
-            "logcolor": "yellow"
+            "logcolor": "yellow",
+            "ondev": false
         },
         {
             "name": "unwarn",
@@ -90,7 +96,8 @@
             "log": true,
             "logicon": "👍",
             "logmsg": "An user has been UNWARNED...",
-            "logcolor": "blue"
+            "logcolor": "blue",
+            "ondev": false
         },
         {
             "name": "warns",
@@ -101,7 +108,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "wjson",
@@ -112,7 +120,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "setwarns",
@@ -123,7 +132,8 @@
             "log": true,
             "logicon": "♻️",
             "logmsg": "The WARNINGS MODULE has been changed...",
-            "logcolor": "green"
+            "logcolor": "green",
+            "ondev": false
         },
         {
             "name": "shutdown",
@@ -134,7 +144,8 @@
             "log": true,
             "logicon": "💣",
             "logmsg": "The bot has been SHUT DOWN temporarily...",
-            "logcolor": "red"
+            "logcolor": "red",
+            "ondev": false
         },
         {
             "name": "turnon",
@@ -145,7 +156,8 @@
             "log": true,
             "logicon": "🔌",
             "logmsg": "The bot has been TURNED ON again...",
-            "logcolor": "yellow"
+            "logcolor": "yellow",
+            "ondev": false
         },
         {
             "name": "ping",
@@ -156,7 +168,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "help",
@@ -167,7 +180,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "pf",
@@ -178,7 +192,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "cmds",
@@ -189,7 +204,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "bans",
@@ -200,7 +216,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "ascii",
@@ -211,7 +228,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "meme",
@@ -222,7 +240,8 @@
             "state": 1,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "userinfo",
@@ -233,7 +252,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "srvinfo",
@@ -244,7 +264,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "rand",
@@ -255,7 +276,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "dice",
@@ -266,7 +288,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "develop",
@@ -277,7 +300,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "emojis",
@@ -288,7 +312,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         },
         {
             "name": "ytsearch",
@@ -299,7 +324,8 @@
             "log": false,
             "logicon": "",
             "logmsg": "",
-            "logcolor": ""
+            "logcolor": "",
+            "ondev": false
         }                                                                                                    
     ],
 

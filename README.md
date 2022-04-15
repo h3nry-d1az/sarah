@@ -40,6 +40,7 @@ Adding custom commands to the server is also an easy task, you only have to foll
   <li><b>logicon</b>: <code>string</code></li>
   <li><b>logmsg</b>: <code>string</code></li>
   <li><b>logcolor</b>: <code>string</code></li>
+  <li><b>ondev</b>: <code>bool</code></li>
 </ul>
 And your command will be <b>ready for action</b>!! 
 
