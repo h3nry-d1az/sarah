@@ -69,6 +69,7 @@ With this notation already detailed, let's go with the commands:
   <li> 👮 <code>s!setwarns [file]</code>: Given an attached JSON file, the server warnings will be replaced by the given in that file. </li>
   <li> 👮 <code>s!shutdown</code>: Just shutdown the bot until the <code>turnon</code> command is called. </li>
   <li> 👮 <code>s!turnon</code>: Turns on the bot again. </li>
+  <li> 👮 <code>s!settings</code>: The bot sends you an embed with this bot's settings. </li>
   <li> <code>s!ping</code>: Simply replies with <code>pong</code>.</li>
   <li> <code>s!help</code>: This command shows you <b>sarah</b>'s commands.</li>
   <li> <code>s!pf [user]</code>: If you ping a user before the command, you see his/her profile photo.</li>
