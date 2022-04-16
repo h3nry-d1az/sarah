@@ -64,7 +64,7 @@ Also, you probably want to add more commands to your bot than <b>sarah</b> has, 
   <li>First of all, you will have to make sure that the dependencies of the project are installed, if they are not, you can solve the problem by executing the <code>$ npm i</code> command</li>
   <li>Then, you will have to obtain the name of the user who created the project and the name of the repository of the command to install, this obviously on the <b>GitHub</b> platform, from where the command will be obtained.</li>
   <li>And finally execute the command <code>node ./addcmd.js [user] [repo]</code> replacing <code>[user]</code> with the user in question and <code>[repo]</code> with the name of the repository, you can see an example below:
-  <div><img src="./assets/addcmd.gif"></div></li>
+  <div align="center"><img src="./assets/addcmd.gif"></div></li>
 </ol>
 
 If you followed the steps correctly either way, you should have your command <b>ready to run</b> on your server.
