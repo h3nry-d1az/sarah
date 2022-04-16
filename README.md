@@ -1,13 +1,13 @@
-<h1 align="center"> sarah </h1>
+<div align="center"><img src="./assets/sarah.png"></div>
 <p align="center"> <a href="https://dottedco.github.io/">Our website</a> — <a href="https://dottedco.github.io/sarah/">sarah project's website</a> </p>
 
-Welcome to the main site of the **sarah** project, a general purpose, configurable and highly reliable discord bot made entirely in pure *JavaScript* with only a few dependencies. Sarah is totally open source software, so feel free to contribute and make the changes you want to this project's source code. Also, if you like this project and want to help us in an indirect way, please give us a star, we will really appreciate it.
+Welcome to the main website of the **sarah** project, a *highly reliable*, *easily configurable*, and *extremely lightweight* discord bot written from scratch in the *JavaScript* programming language with just a few dependencies. The **sarah** project is completely *open source*, so feel free to make any changes, report any bugs or strange behaviors, and make suggestions about what you would like to see implemented in the future in this project. Also, if you want to help us indirectly, you can always **give this repository a star** and **share it with your friends**, that would help us a lot.
 
 <br>
 <br>
 
 <h2 align="center"> installation </h2>
-In the following steps, we'll guide you through the <i>(very easy)</i> process of installing the <b>sarah</b> bot in your discord server and deploying it.
+In the following steps we will guide you through the <i>(very simple)</i> process to successfully <b>install</b> and <b>configure</b> the <b>sarah</b> bot on your favorite discord server.
 <br>
 
 1. [Forking and installation](#-forking-and-installation-)
@@ -15,17 +15,32 @@ In the following steps, we'll guide you through the <i>(very easy)</i> process o
 3. [Bot deployment](#-bot-deployment-)
 4. [Adding more commands](#-adding-more-commands-)
 
+<br>
+
 <h4 align="center"> Forking and installation </h4>
-To install <b>sarah</b> in your favourite server, first you will have to fork this repository by clicking the fork button, after that, wait for a while until the process is completed and you will have succesfully forked the <b>sarah</b> repository.
+To install <b>sarah</b> on your favorite discord server, you will first have to <i>fork</i> this repository, a simple task that can be done by clicking on the <code>fork</code> button of this repository, as shown in the image below:
+<div align="center"><img src="./assets/forking.gif" height=110px></div>
+Then, wait a bit until the forking process has finished and thus, you have created your own branch of this bot. Now, you can give the repository the name you want and we can continue with the next step.
+
+<br>
 
 <h4 align="center"> Configuration </h4>
-After forking <b>sarah</b>, you will have to configure it, this can be done by editing the <code>./sarah/settings/settings.json</code> module with your favourite code editor. You must fill in all the properties.
+After having created your own fork of the <b>sarah</b> bot, it's time to configure it to adapt it to the needs of your own server, in general, we would like to tell you that you can do this by editing the file <code>sarah/settings/settings.json</code>, however, you are probably looking for one more rigorous and specific documentation on what each of the sections is for, if this is what you want, you should take a look at the <a href="docs/settings.md">documentation page of the settings.json module</a>.
+
+<br>
 
 <h4 align="center"> Bot deployment </h4>
-And finally, you will just have to set up your deployment workflow (we personally recommend <a href="https://www.heroku.com/">Heroku</a>) and your bot will be successfully deployed.
+And finally you will only have to mount your deployment workflow on your <b>sarah</b> fork (this can be done using platforms like <a href="https://www.heroku.com/">Heroku</a> or <a href="https://www.netlify.com/">Netlify</a>) and your discord bot should be successfully deployed, so you should see an environment like the one below in your repository:
+<div align="center"><img src="./assets/environment.gif" height=80px></div>
+
+<br>
 
 <h4 align="center"> Adding more commands </h4>
-Adding custom commands to the server is also an easy task, you only have to follow those three instructions:
+Also, you probably want to add more commands to your bot than <b>sarah</b> has, this is a simple task, but one that you can do manually or using the <b>CLI</b> that <b>sarah</b> includes:
+
+<br>
+
+<h6 align="center">Adding commands manually</h6>
 <ol>
   <li> Firstly, you need to create its own JavaScript module in the <code>./sarah/commands/</code> directory, which must be called <code>[command].js</code>.</li>
   <li> Then, write the command program within its main function, which must be called <code>[command]cmd</code> and must recieve five arguments: <code>message, args, client, _, __</code> <i>(the last two arguments are useless, but your function must recieve them; otherwise it will generate an error)</i>. </li>
@@ -42,7 +57,17 @@ Adding custom commands to the server is also an easy task, you only have to foll
   <li><b>logcolor</b>: <code>string</code></li>
   <li><b>ondev</b>: <code>bool</code></li>
 </ul>
-And your command will be <b>ready for action</b>!! 
+
+<br>
+<h6 align="center">Adding commands using <b>sarah</b>'s <b>CLI</b></h6> 
+<ol>
+  <li>First of all, you will have to make sure that the dependencies of the project are installed, if they are not, you can solve the problem by executing the <code>$ npm i</code> command</li>
+  <li>Then, you will have to obtain the name of the user who created the project and the name of the repository of the command to install, this obviously on the <b>GitHub</b> platform, from where the command will be obtained.</li>
+  <li>And finally execute the command <code>node ./addcmd.js [user] [repo]</code> replacing <code>[user]</code> with the user in question and <code>[repo]</code> with the name of the repository, you can see an example below:
+  <div><img src="./assets/addcmd.gif"></div></li>
+</ol>
+
+If you followed the steps correctly either way, you should have your command <b>ready to run</b> on your server.
 
 <br>
 <br>
@@ -113,4 +138,4 @@ SOFTWARE.
 
 <br>
 
-<div align="center"><a href="docs/settings.md"><code>settings.json</code> documentation</a> — <a href="https://github.com/topics/sarahcmd">other commands</a></div>
+<div align="center"><a href="docs/settings.md"><code>settings.json</code> documentation</a> — <a href="docs/creating.md">create your own commands</a> — <a href="https://github.com/topics/sarahcmd">other commands</a></div>
