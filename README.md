@@ -19,7 +19,7 @@ In the following steps we will guide you through the <i>(very simple)</i> proces
 
 <h4 align="center"> Forking and installation </h4>
 To install <b>sarah</b> on your favorite discord server, you will first have to <i>fork</i> this repository, a simple task that can be done by clicking on the <code>fork</code> button of this repository, as shown in the image below:
-<div align="center"><img src="./assets/forking.gif" height=110px></div>
+<div align="center"><img src="./assets/forking.gif"></div>
 Then, wait a bit until the forking process has finished and thus, you have created your own branch of this bot. Now, you can give the repository the name you want and we can continue with the next step.
 
 <br>
@@ -31,7 +31,7 @@ After having created your own fork of the <b>sarah</b> bot, it's time to configu
 
 <h4 align="center"> Bot deployment </h4>
 And finally you will only have to mount your deployment workflow on your <b>sarah</b> fork (this can be done using platforms like <a href="https://www.heroku.com/">Heroku</a> or <a href="https://www.netlify.com/">Netlify</a>) and your discord bot should be successfully deployed, so you should see an environment like the one below in your repository:
-<div align="center"><img src="./assets/environment.gif" height=80px></div>
+<div align="center"><img src="./assets/environment.gif"></div>
 
 <br>
 
