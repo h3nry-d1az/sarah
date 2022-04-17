@@ -18,3 +18,6 @@ It will also be very useful to add a <code>LICENSE.md</code> and <code>README.md
 </ol>
 
 With this you should have successfully created a nice <b>sarah</b> bot extension, if you want to learn more about how to add more extensions to your <b>sarah</b> bot, go to the <code>Adding more commands</code> section of <a href="../README.md">this site</a>.
+
+
+<div align="center"><a href="https://dottedco.github.io/sarah/">sarah project's website</a> — <a href="docs/settings.md"><code>settings.json</code> documentation</a> — <a href="https://github.com/topics/sarahcmd">other commands</a></div>
